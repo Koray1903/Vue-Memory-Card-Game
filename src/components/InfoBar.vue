@@ -1,15 +1,15 @@
 <template>
     <section class="infoBarFlex">
-        <p class="infoBar__title">Memory Card Game</p>
+        <p class="infoBarFlex__title">Memory Card Game</p>
 
-        <div class="infoBarInnerFlex">
-            <div class="infoBarInnerFlex__time">
+        <div class="infoBarFlex__InnerFlex">
+            <div class="infoBarFlex__InnerFlex__time">
                 <span>Time Elapsed : </span>
 
                 <span>{{minute(timeElapsed)}} minutes {{second(timeElapsed)}} seconds</span>
             </div>
 
-            <div class="infoBarInnerFlex__turns">
+            <div class="infoBarFlex__InnerFlex__turns">
                 <span>Number of Turns : </span>
 
                 <span>{{numberOfTurns}}</span>
@@ -49,14 +49,14 @@
         padding: 24px 0;
     }
 
-    .infoBar__title {
+    .infoBarFlex__title {
         font-family: 'Grandstander', cursive;
         font-size: 48px;
         margin: 0;
         padding: 12px 0;
     }
 
-    .infoBarInnerFlex {
+    .infoBarFlex__InnerFlex {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -64,14 +64,14 @@
         width: 1200px;
     }
 
-    .infoBarInnerFlex__time {
+    .infoBarFlex__InnerFlex__time {
         font-family: 'Grandstander', cursive;
         font-size: 36px;
         padding: 12px 0;
         text-align: left;
     }
 
-    .infoBarInnerFlex__turns {
+    .infoBarFlex__InnerFlex__turns {
         font-family: 'Grandstander', cursive;
         font-size: 36px;
         padding: 12px 0;
