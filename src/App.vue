@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <section class="main">
+        <NavBar/>
+
+        <GameScreen/>
+
+        <ResetButton/>
+    </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import {store} from "@/store";
+    import GameScreen from './components/CardDeck.vue';
+    import ResetButton from "@/components/ResetButton";
+    import NavBar from "@/components/InfoBar";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        store,
+        components: {
+            ResetButton,
+            GameScreen,
+            NavBar
+        }
+    };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    body {
+        font-family: 'Grandstander', cursive;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: white;
+        background-color: black;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 </style>

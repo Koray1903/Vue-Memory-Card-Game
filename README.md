@@ -1,4 +1,4 @@
-# vuememorygame
+# vuememorycardgame
 
 ## Project setup
 ```
