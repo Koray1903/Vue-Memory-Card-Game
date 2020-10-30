@@ -55,5 +55,4 @@
     .card__front__hidden {
         display: none;
     }
-
 </style>
