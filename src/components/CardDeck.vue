@@ -30,7 +30,5 @@
         flex-wrap: wrap;
         justify-content: space-between;
         max-width: 800px;
-
     }
-
 </style>
