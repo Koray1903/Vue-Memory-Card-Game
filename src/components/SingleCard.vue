@@ -1,10 +1,10 @@
 <template>
     <section class="card">
-        <img :class="card.picked || card.matched ? 'card__only card__back__hidden' : 'card__only card__back__revealed'"
+        <img :class="card.picked || card.matched ? 'card__back__hidden' : 'card__back__revealed'"
              src="../assets/QuestionMarkCard.jpg" @click="() => revealCard(card.id)"
              alt="questionMark"/>
 
-        <div :class="card.picked || card.matched ? 'card__only card__front__revealed' : 'card__only card__front__hidden'">
+        <div :class="card.picked || card.matched ? 'card__front__revealed' : 'card__front__hidden'">
             {{card.shownCardNumber}}
         </div>
     </section>
