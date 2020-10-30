@@ -6,7 +6,7 @@
             <div class="infoBarFlex__InnerFlex__time">
                 <span>Time Elapsed : </span>
 
-                <span>{{minute(timeElapsed)}} minutes {{second(timeElapsed)}} seconds</span>
+                <span>{{minuteModifier(timeElapsed)}} minutes {{secondModifier(timeElapsed)}} seconds</span>
             </div>
 
             <div class="infoBarFlex__InnerFlex__turns">
@@ -24,10 +24,10 @@
     export default {
         name: "NavBar",
         methods: {
-            minute: function (minute) {
+            minuteModifier: function (minute) {
                 return Math.floor(minute / 1000 / 60);
             },
-            second: function (second) {
+            secondModifier: function (second) {
                 return Math.floor(second / 1000 % 60);
             }
         },
